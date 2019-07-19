@@ -1,9 +1,0 @@
-#!/bin/bash
-
-mkdir -p cmake
-cd cmake
-cmake -DPCSC_SUPPORT=ON -DSIGNING_SUPPORT=ON -DMBEDTLS_SUPPORT=ON -DBUILD_SHARED=ON -DBUILD_TESTS=ON ..
-make
-../tests/test_runner.py ../tests/modems.csv bin/trust_onboard_sdk_tests bin/trust_onboard_ll_tests
-
-
